@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shamil's Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="static/styles.css" rel="stylesheet">
+    <script src="static/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+
+</head>
+<body>
+
+    
+    
+
+    <nav class="navbar navbar-expand-sm bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#"><img style="width:50px;height: 30px;" src="images/logo.png"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+
+                    
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="background_home"></div>
+
+    <!-- home section -->
+    <section class="d-flex flex-column justify-content-center align-items-center" id="home" style="height: 100vh; padding: 70px 20px;">
+        
+       
+
+        <h2>Hi, I'm Shamil!</h2>
+        
+        <div class="img_container">
+            <img src='images/profile.jpg'>
+        </div>
+
+        <div>
+            <span></span>
+            <span id="typing-effect"></span>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="https://www.linkedin.com/in/shamosval" >
+                <i class="bi bi-linkedin"
+                data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="LinkedIn"></i>
+            </a>
+
+            <a href="https://www.facebook.com/shamosval/">
+                <i class="bi bi-facebook"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Facebook"
+                ></i>
+            </a>
+
+            <a href="https://github.com/shamosval">
+                <i class="bi bi-github"
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="GitHub"
+                ></i>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=5491139116144">
+                <i class="bi bi-whatsapp"
+
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="WhatsApp"
+
+                ></i>
+            </a>
+
+            <a href="https://t.me/kofebarrio">
+                <i class="bi bi-telegram"
+
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Telegram"
+
+                ></i>
+            </a>
+        </div>
+
+        
+        <div class="table_custom d-flex flex-column align-items-center mt-3">
+           
+            <table>
+                <tr>
+                    <td><i class="bi bi-envelope"></i></td>
+                    <td><a href="mailto:shamosval@gmail.com">shamosval@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><i class="bi bi-cloud-arrow-down"></i> </td>
+                    <td><a href="Shamil_Valiev_CV.pdf" download="Shamil_Valiev_CV.pdf">Download resume</a></td>
+                </tr>
+                <tr>
+                    <td><i class="bi bi-geo-alt"></i></td>
+                    <td><p>Buenos Aires, Argentina</p></td>
+                </tr>
+                
+            </table>
+        </div>
+
+        
+
+        <div>
+            <a href="#projects" class="down-arrow"><i class="bi bi-chevron-down fs-1"></i></a> 
+        </div>
+        
+    </section>
+
+
+
+    <!-- projects section -->
+    <section id="projects" style="height: 100%; padding: 70px 20px;">
+        
+        <h1>Projects</h1>
+
+
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-5 m-auto">
+
+            <div class="col d-flex justify-content-center">
+            <div class="card">
+                <div class="img_cont">
+                  
+                  <img src="images/dual_history.png" class="card-img-top png" alt="Screenshot of web application">
+
+                  <img src="images/dual_history.gif" class="card-img-top gif" alt="Screenshot of web application">
+                </div>
+
+              <div class="card-body">
+                <p class="card-text">An educational app for classroom use as well as casual learning, where users can explore interactive dual timelines and add events to favorites.</p>
+
+                <div class="btns_projects mb-2">
+                    <a role="button" class="btn btn-outline-primary p-2" href="https://github.com/shamosval/dual_history_django/tree/main/history">Source code</a>
+                    <a role="button" href="https://youtu.be/ej74V0ZUhqI" class="btn btn-outline-primary p-2">YouTube Demo</a>
+                    
+                    
+                </div>
+                <div class="frameworks">
+                    <span>#Django</span>
+                    <span>#JavaScript</span>
+                    <span>#CSS</span>
+                    <span>#HTML</span>
+                    <span>#jQuery</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col d-flex justify-content-center">
+            <div class="card">
+                <div class="img_cont">
+                    <img src="images/ebay.gif" class="card-img-top gif" alt="Screenshot of web application">
+                    <img src="images/ebay.png" class="card-img-top png" alt="Screenshot of web application">
+                </div>
+              <div class="card-body">
+                
+                <p class="card-text">A web application resembling Ebay's functionality. Users can create listings, bid on them, add products to watchlist, leave comments.</p>
+                <div class="btns_projects mb-2">
+                    <a role="button" class="btn btn-outline-primary p-2" href="https://github.com/shamosval/e-commerce_app">Source code</a>
+                    <a role="button" href="https://youtu.be/Pzs2WlC5_yU" class="btn btn-outline-primary p-2">YouTube Demo</a>  
+                </div>
+                <div class="frameworks">
+                    <span>#Django</span>
+                    <span>#JavaScript</span>
+                    <span>#CSS</span>
+                    <span>#HTML</span>
+                    <span>#Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col d-flex justify-content-center">
+            <div class="card">
+                <div class="img_cont">
+                    <img src="images/mail.gif" class="card-img-top gif" alt="Screenshot of web application">
+                    <img src="images/mail.png" class="card-img-top png" alt="Screenshot of web application">
+                </div>
+              <div class="card-body">
+                
+                <p class="card-text">A web application similar to Gmail in functionality and design. Users can send, reply to, and archive emails, view inbox, sent, and archived folders.</p>
+
+                <div class="btns_projects mb-2">
+                    <a role="button" class="btn btn-outline-primary p-2" href="https://github.com/shamosval/mail_app">Source code</a>
+                    <a role="button" href="https://youtu.be/c9CtVaZiv1s" class="btn btn-outline-primary p-2">YouTube Demo</a>     
+                </div>
+                <div class="frameworks">
+                    <span>#Django</span>
+                    <span>#JavaScript</span>
+                    <span>#CSS</span>
+                    <span>#HTML</span>
+                    <span>#Bootstrap</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col d-flex justify-content-center">
+            <div class="card">
+                <div class="img_cont">
+                    <img src="images/twitter.gif" class="card-img-top gif" alt="Screenshot of web application">
+                    <img src="images/twitter.png" class="card-img-top png" alt="Screenshot of web application">
+                </div>
+              <div class="card-body">
+                <p class="card-text">A website similar to Twitter with pagination functionality. Users can post, edit, and like tweets, follow/unfollow users, edit user profile.</p>
+
+                <div class="btns_projects mb-2">
+                    <a role="button" class="btn btn-outline-primary p-2" href="https://github.com/shamosval/social_network">Source code</a>
+                    <a role="button" href="https://youtu.be/UQGskT8hwy4" class="btn btn-outline-primary p-2">YouTube Demo</a>   
+                </div>
+                <div class="frameworks">
+                    <span>#Django</span>
+                    <span>#JavaScript</span>
+                    <span>#CSS</span>
+                    <span>#HTML</span>
+                    <span>#Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+
+        
+    </section>
+
+    <!-- about section -->
+    <section  id="about" style="height: 100%; min-height: 100vh;  padding: 70px 20px;">
+
+        <h1>Skills and values</h1>
+        
+        <div class="row row-cols-1 row-cols-md-2 g-5 m-auto">
+            
+            <div class="col d-flex justify-content-center">
+                <div class="card text-bg-success mb-3" style="max-width: 25rem;">
+                    <div class="card-header text-center fs-5 d-flex align-items-center justify-content-around"><i class="bi bi-code-slash fs-2"></i>Software Development Proficiency</div>
+                    <div class="card-body">
+                        
+                        <p class="card-text">Completed Harvard's CS50x and CS50 WebDev, actively earning certifications at FreeCodeCamp and other online platforms. Dedicated to continuous learning and passionate about contributing to the future of technology.</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card text-bg-success mb-3" style="max-width: 25rem;">
+                   
+                    <div class="card-header text-center fs-5 d-flex align-items-center justify-content-around"><i class="bi bi-headset fs-2"></i>Diverse Professional Experience</div>
+                    <div class="card-body">
+
+                        <p class="card-text">Excelled in customer support and ecommerce management, independently mastering HTML and CSS to optimize the website of my most recent employer's company. Demonstrated resourcefulness, adaptability, and a proactive approach to skill development.</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card text-bg-success mb-3" style="max-width: 25rem;">
+                    
+                    <div class="card-header text-center fs-5 d-flex align-items-center justify-content-around"><i class="bi bi-robot fs-2"></i>Problem-Solving and Creativity</div>
+                    <div class="card-body">
+                       
+                        <p class="card-text">Leveraged three years of experience as a cabinetmaker/carpenter to hone problem-solving skills and foster creativity. Apply these strengths to approach coding challenges with innovative solutions.</p>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card text-bg-success mb-3" style="max-width: 25rem;">
+
+                    <div class="card-header text-center fs-5 d-flex align-items-center justify-content-around"><i class="bi bi-globe fs-2"></i>Skilled Multilingual and International Relations Background</div>
+                    <div class="card-body">
+                        
+                        <p class="card-text">MA in International Relations with fluency in English, intermediate proficiency in Spanish and Turkish, and native Russian speaker. Offer strong cross-cultural communication and global perspectives to software development projects.</p>
+                    </div> 
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- certifications section -->
+    <section id="certifications" style="height: 100vh;  padding: 70px 20px; position: relative;">
+
+        <h1>Certifications</h1>
+
+        <div id="carouselExampleCaptions" class="carousel slide d-flex justify-content-center p-3">
+          
+          
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="images/cs50x.png" class="d-block w-100" alt="Certificate">
+              <div class="carousel-caption d-none">
+                <h5>Harvard's CS50X (June, 2023)</h5>
+                <p>Abstraction, Algorithms, Data Structures, C, Python, JS, HTML, SQLite, Flask</p>
+                <a href="https://cs50.harvard.edu/certificates/20154689-ac16-4e90-8c7b-30ab8d02629f" class="btn btn-outline-primary btn-sm" target="_blank">Verification link</a>
+                
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/cs50w.png" class="d-block w-100" alt="Certificate">
+              <div class="carousel-caption d-none">
+                <h5>Harvard's CS50 Web Programming (July, 2023)</h5>
+                <p>Database Design, Scalability, Security, UX/UI, Python, Django, JS, HTML, CSS, Bootstrap</p>
+                <a href="https://cs50.harvard.edu/certificates/ac0e5f5b-b920-4e0e-8e4a-bcd22abd6c18" class="btn btn-outline-primary btn-sm" target="_blank">Verification link</a>
+                
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="images/uba_rojas.png" class="d-block w-100" alt="Certificate">
+              <div class="carousel-caption d-none">
+                <h5>UBA Rojas WebDev (June, 2023)</h5>
+                <p>HTML Structure, Semantic HTML, Elements, Forms and User Input.</p>
+                <a href="https://www.rojas.uba.ar/cursos/desarrollo-web-modulo-html5/1001" class="btn btn-outline-primary btn-sm" target="_blank">Course info</a>
+                
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+
+        <footer>
+            <div>
+                <a href="#home" class="up-arrow"><i class="bi bi-chevron-up fs-1"></i></a> 
+            </div>
+            <p>&copy; 2023 Shamil Valiev. All rights reserved.</p>
+            
+
+            
+            <div>
+            <a href="https://github.com/shamosval">
+                <i class="bi bi-github"
+
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="GitHub"
+
+                ></i>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=5491139116144">
+                <i class="bi bi-whatsapp"
+
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="WhatsApp"
+
+                ></i>
+            </a>
+
+            
+            <a href="mailto:shamosval@gmail.com">
+                <i class="bi bi-envelope"
+
+                data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Send Email"
+
+                ></i>
+            </a>
+
+
+            <a href="Shamil_Valiev_CV.pdf" download="Shamil_Valiev_CV.pdf">
+                <i class="bi bi-cloud-arrow-down"
+
+                    data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip"
+                data-bs-title="Download CV"
+
+
+                >
+                    
+                </i>
+            </a>
+
+        </div>
+            
+        </footer>
+
+
+    </section>
+
+
+    
+  
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const options = {
+                strings: ['Web Developer', 'Problem Solver', 'JavaScript Enthusiast'],
+                typeSpeed: 60, // Typing speed in milliseconds
+                loop: true, // Enable looping of the strings
+                backSpeed: 40,
+            };
+
+            // Initialize Typed.js on the target element
+            const typed = new Typed('#typing-effect', options);
+        });
+    </script>
+
+    
+
+
+
+</body>
+</html>

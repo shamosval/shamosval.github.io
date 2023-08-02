@@ -1,0 +1,344 @@
+
+.img_container {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    border: 4px double grey; 
+    overflow: hidden; 
+}
+
+.img_container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+
+}
+
+section a {
+	color: #fff;
+	text-decoration: none;
+}
+
+section a:hover {
+  color: #bbb;
+}
+
+section {
+  color: #fff;
+
+
+}
+
+.background_home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/back1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 70px 20px;
+
+  z-index: -10;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+a i {
+  font-size: xx-large;
+  padding: 0 5px;
+}
+
+.table_custom {
+  
+  background-color: transparent; 
+  border: none; 
+
+}
+
+
+.table_custom td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+.down-arrow {
+  display: block;
+  font-size: 24px;
+  color: #ddd;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px; 
+  left: 48%; 
+  
+  animation: fadeInOut 3.5s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { 
+      opacity: 0;
+      transform: translateY(-20px); 
+    }
+    50% { opacity: 1; }
+    100% { 
+      opacity: 0; 
+      transform: translateY(0);
+    }
+}
+
+
+
+/*Projects section styles*/
+
+.gif {
+  display: none;
+
+}
+
+.png {
+  display: block;
+  opacity: 0.8;
+}
+
+
+
+
+.img_cont:hover .gif {
+  display: block;
+}
+
+.img_cont:hover .png {
+  display: none;
+}
+
+
+
+#projects .card {
+  max-width: 25rem;
+  background-color: #A9CCE3;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+
+
+body {
+  background-color: #333;
+  font-family: Helvetica, sans-serif;
+}
+
+.frameworks span {
+  border: 1px solid #94B3C7;
+  background-color: #94B3C7;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: xx-small;
+  cursor: default;
+  margin: 2px 3px;
+}
+
+.frameworks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.frameworks span:hover {
+  border: 1px solid #7F99AA;
+  background-color: #7F99AA;
+}
+
+.btns_projects a {
+  border: 1px solid #94A6B1;
+  color: #94A6B1;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.btns_projects a:hover {
+  border: 1px solid #94A6B1;
+  color: white;
+  background-color: #94A6B1;
+}
+
+.btns_projects {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*Styles for About section*/
+
+#about .card {
+  max-width: 60vw;
+  background-color: #7F99AA !important;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+/*Styles for certifications section*/
+
+.carousel-inner {
+  max-width: 50vw;
+  max-height: 60vh;
+
+  border-radius: 20px;
+
+}
+
+
+
+.carousel-control-prev, .carousel-control-next {
+  width: 30px;
+}
+
+
+
+
+.carousel-caption {
+  color: black;
+  background-color: rgba(148, 179, 199, 0.9);
+  font-family: serif;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20%;
+  opacity: 0; 
+  animation: fade 0.3s ease-in-out; 
+  animation-fill-mode: forwards;
+  cursor: default;
+
+
+}
+
+@keyframes fade {
+  from {
+    opacity: 0; /* Starting opacity */
+  }
+  to {
+    opacity: 1; /* Ending opacity */
+  }
+}
+
+@media (max-width: 800px) {
+  
+  .carousel-inner {
+    max-width: 70vw;
+    max-height: 100%;
+
+    border-radius: 15px;
+
+}
+
+  .carousel-caption {
+    
+    font-size: small;
+    padding: 3px;
+    margin-bottom: 2%;
+  }
+
+  .carousel-caption h5 {
+    font-size: small;
+    margin-bottom: 0;
+    font-weight: bolder;
+  }
+
+  .carousel-caption p {
+    
+    margin-bottom: 0;
+  }
+
+  .carousel-caption a {
+    font-size: small;
+    padding: 3px;
+    border: 1px solid #94A6B1;
+    color: #94A6B1;
+    background-color: white;
+    border-radius: 5px !important;
+  }
+
+  
+
+}
+
+.carousel-item {
+  cursor: pointer;
+  
+}
+
+.carousel-caption a {
+  border: 1px solid #94A6B1;
+  color: #94A6B1;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.carousel-caption a:hover {
+  border: 1px solid #94A6B1;
+  color: white;
+  background-color: #94A6B1;
+}
+
+
+/*Footer styles here*/
+
+
+footer {
+  color: white;
+  padding: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  position: absolute; 
+  bottom: 0; 
+left: 0; 
+    width: 100%;
+
+}
+
+footer p {
+  margin-top: -5px;
+}
+
+.up-arrow {
+  display: block;
+  font-size: 24px;
+  color: #ddd;
+  text-align: center;
+  text-decoration: none;  
+  animation: fadeInOut 2.5s infinite;
+  animation-direction: reverse;
+}
+
+footer i {
+  font-size: 1.5rem;
+}
+
+
+/*Styles for tooltips*/
+.custom-tooltip {
+  --bs-tooltip-bg: rgba(148, 179, 199, 0.8);
+  --bs-tooltip-color: white;
+
+}
