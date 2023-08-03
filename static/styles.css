@@ -84,8 +84,13 @@ a i {
   position: absolute;
   bottom: 1%; 
   left: 48%; 
-  
   animation: fadeInOut 3.5s infinite;
+}
+
+.down-arrow-div {
+  position: absolute;
+  bottom: 0%; 
+  left: 48%;
 }
 
 @keyframes fadeInOut {
