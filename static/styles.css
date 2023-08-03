@@ -82,7 +82,7 @@ a i {
   text-align: center;
   text-decoration: none;
   position: absolute;
-  bottom: 3%; 
+  bottom: 1%; 
   left: 48%; 
   
   animation: fadeInOut 3.5s infinite;
