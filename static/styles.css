@@ -83,14 +83,14 @@ a i {
   text-decoration: none;
   position: absolute;
   bottom: 1%; 
-  left: 48%; 
+  left: 50%; 
   animation: fadeInOut 3.5s infinite;
 }
 
 .down-arrow-div {
   position: absolute;
   bottom: -1%; 
-  left: 48%;
+  left: 50%;
 }
 
 @keyframes fadeInOut {
