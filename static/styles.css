@@ -81,9 +81,7 @@ a i {
   color: #ddd;
   text-align: center;
   text-decoration: none;
-  position: absolute;
-  bottom: 1%; 
-  left: 50%; 
+   
   animation: fadeInOut 3.5s infinite;
 }
 
