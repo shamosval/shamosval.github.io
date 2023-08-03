@@ -89,7 +89,7 @@ a i {
 
 .down-arrow-div {
   position: absolute;
-  bottom: 0%; 
+  bottom: -1%; 
   left: 48%;
 }
 
