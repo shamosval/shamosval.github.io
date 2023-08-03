@@ -90,7 +90,7 @@ a i {
 .down-arrow-div {
   position: absolute;
   bottom: -1%; 
-  left: 50%;
+  left: 48%;
 }
 
 @keyframes fadeInOut {
