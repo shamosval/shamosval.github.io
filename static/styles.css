@@ -127,7 +127,7 @@ bottom: 1%;
 
 
 #projects .card {
-  max-width: 25rem;
+  max-width: 28rem;
   background-color: #A9CCE3;
   border-radius: 30px;
   overflow: hidden;
@@ -194,6 +194,7 @@ h1 {
   font-size: 1.5rem;
   text-align: center;
   padding-top: 10px;
+  margin-top: 1rem;
 }
 
 
