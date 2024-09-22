@@ -1,0 +1,7 @@
+# Ignore WebStorm/IntelliJ IDEA files
+.idea/
+*.iml
+
+# Ignore OS-specific files (optional)
+.DS_Store
+Thumbs.db
