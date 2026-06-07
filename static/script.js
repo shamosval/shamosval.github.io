@@ -1,5 +1,14 @@
+// Mark JS as available so CSS can safely hide-then-reveal scroll content
+document.documentElement.classList.add('js');
+
 document.addEventListener("DOMContentLoaded", function() {
-      
+
+      // Footer copyright year
+      const yearEl = document.getElementById('year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
       //Enable tooltips
 
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -32,23 +41,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
       function navHighlighter() {
-        
-        // Get current scroll position
-        let scrollY = window.pageYOffset;
-        
+
+        // Detection point sits just below the fixed navbar, matching the
+        // sections' scroll-margin-top so anchor jumps land on the right link.
+        const scrollPos = window.pageYOffset + 90;
+
         // Now we loop through sections to get height, top and ID values for each
         sections.forEach(current => {
           const sectionHeight = current.offsetHeight;
-          const sectionTop = current.offsetTop - 50;
-          sectionId = current.getAttribute("id");
+          const sectionTop = current.offsetTop;
+          const sectionId = current.getAttribute("id");
+          const link = document.querySelector("#navbarSupportedContent a[href*=" + sectionId + "]");
+          if (!link) return;
 
-          if (
-            scrollY > sectionTop &&
-            scrollY <= sectionTop + sectionHeight
-          ){
-            document.querySelector("#navbarSupportedContent a[href*=" + sectionId + "]").classList.add("active");
+          if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+            link.classList.add("active");
           } else {
-            document.querySelector("#navbarSupportedContent a[href*=" + sectionId + "]").classList.remove("active");
+            link.classList.remove("active");
           }
         });
       }
@@ -85,6 +94,26 @@ document.addEventListener("DOMContentLoaded", function() {
           });
         });
 
-      
+
+      // Scroll-reveal: fade/slide elements in as they enter the viewport
+      const revealEls = document.querySelectorAll(
+        '.section-head, #certifications .carousel, #experience .card, #skills .card'
+      );
+
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+        revealEls.forEach(el => revealObserver.observe(el));
+      } else {
+        // Fallback: just show everything
+        revealEls.forEach(el => el.classList.add('in-view'));
+      }
 
 });
